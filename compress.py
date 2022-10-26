@@ -27,11 +27,17 @@ class Compress():
         return self.compressed, self.values
 
     def uncompress(self, compressed, values):
+        positionCounter = 0
         for word in compressed:
+            positionCounter += 1
             try:
-                if values.index(word) == '':
+                key = [keys for keys in values.keys() if values[keys] == word]
+                if key[0] == '':
                     self.text += ' '
+                elif positionCounter == len(compressed):
+                    self.text += key[0]
                 else:
-                    self.text += values.index(word)
+                    self.text += key[0]+' '
             except ValueError:
                 raise CorruptedCompresion
+        return self.text
