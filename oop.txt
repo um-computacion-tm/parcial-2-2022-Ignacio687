@@ -1,0 +1,228 @@
+Guía para Principiantes de la Programación Orientada a Objetos (POO) en Python
+La programación es un arte. Y al igual que en el arte, la selección de los pinceles y pinturas adecuados es esencial para producir las mejores obras. La programación orientada a objetos (POO – Object-Oriented Programming) en Python es una de esas habilidades.
+La elección del lenguaje de programación adecuado es una parte crucial de cualquier proyecto, y puede conducir a un desarrollo fluido y agradable o a una completa pesadilla. Por lo tanto, lo mejor es que utilices el lenguaje que mejor se adapte a tu caso de uso.
+Esa es la principal razón para aprender programación orientada a objetos en Python, que además es uno de los lenguajes de programación más populares.
+Tabla de contenidos
+Un ejemplo de programa en Python
+Requisitos para aprender Python OOP
+¿Qué es la programación orientada a objetos en Python?
+¿Por qué utilizamos la programación orientada a objetos en Python?
+Todo es un objeto en Python
+Tu primer objeto en Python
+Los 4 pilares de la OOP en Python
+Construir una calculadora de resolución de formas de área
+Un ejemplo de programa en Python
+Antes de entrar en materia, vamos a plantear una pregunta: ¿has escrito alguna vez un programa en Python como el siguiente?
+
+secret_number = 20
+ 
+while True:
+   number = input('Guess the number: ')
+ 
+   try:
+       number = int(number)
+   except:
+       print('Sorry that is not a number')
+       continue
+ 
+   if number != secret_number:
+       if number > secret_number:
+           print(number, 'is greater than the secret number')
+ 
+       elif number < secret_number:
+           print(number, 'is less than the secret number')
+   else:
+       print('You guessed the number:', secret_number)
+       break
+
+Este código es un simple adivinador de números. Intenta copiarlo en un archivo Python y ejecutarlo en tu sistema. Cumple perfectamente su propósito.
+Kinsta me mimó tanto que ahora exijo ese nivel de servicio a todos los proveedores. Nosotros también intentamos estar a ese nivel con nuestro soporte de herramientas SaaS.
+Pero aquí surge un gran problema: ¿y si te pedimos que implementes una nueva función? Podría ser algo sencillo, por ejemplo:
+«Si la entrada es un múltiplo del número secreto, da una pista al usuario».
+El programa se volvería rápidamente complejo y pesado al aumentar el número de funciones y, por tanto, el número total de condicionales anidados.
+Ese es precisamente el problema que intenta resolver la programación orientada a objetos.
+Requisitos para aprender Python OOP
+Antes de adentrarte en la programación orientada a objetos, te recomendamos encarecidamente que tengas unos conocimientos básicos de Python.
+Clasificar los temas considerados «básicos» puede ser difícil. Por ello, hemos diseñado una hoja de trucos con los principales conceptos necesarios para aprender programación orientada a objetos en Python.
+Variable: Nombre simbólico que apunta a un objeto específico (veremos qué significan los objetos a lo largo del artículo).
+Operadores aritméticos: Suma (+), resta (-), multiplicación (*), división (/), división entera (//), módulo (%).
+Tipos de datos incorporados: Numéricos (enteros, flotantes, complejos), Secuencias (cadenas, listas, tuplas), Booleanos (Verdadero, Falso), Diccionarios y Conjuntos.
+Expresiones booleanas: Expresiones en las que el resultado es True o False.
+Condicional: Evalúa una expresión booleana y realiza algún proceso dependiendo del resultado. Se maneja mediante sentencias if/else.
+Bucle: Ejecución repetida de bloques de código. Pueden ser bucles for o while.
+Funciones: Bloque de código organizado y reutilizable. Se crean con la palabra clave def.
+Argumentos: Objetos que se pasan a una función. Por ejemplo: sum([1, 2, 4])
+Ejecuta un script de Python: Abre un terminal o línea de comandos y escribe «python <nombre del archivo>».
+Abre un shell de Python: Abre un terminal y escribe python o python3 dependiendo de tu sistema.
+Ahora que tienes estos conceptos muy claros, puedes avanzar en la comprensión de la programación orientada a objetos.
+¿Qué es la programación orientada a objetos en Python?
+La programación orientada a objetos (POO) es un paradigma de programación en el que podemos pensar en problemas complejos como objetos.
+Un paradigma es una teoría que proporciona la base para resolver problemas.
+Así que cuando hablamos de POO, nos referimos a un conjunto de conceptos y patrones que utilizamos para resolver problemas con objetos.
+Un objeto en Python es una colección única de datos (atributos) y comportamiento (métodos). Puedes pensar en los objetos como cosas reales que te rodean. Por ejemplo, considera las calculadoras:
+Una calculadora puede ser un objeto.
+Como puedes observar, los datos (atributos) son siempre sustantivos, mientras que los comportamientos (método) son siempre verbos.
+Esta compartimentación es el concepto central de la programación orientada a objetos. Se construyen objetos que almacenan datos y contienen tipos específicos de funcionalidad.
+¿Por qué utilizamos la programación orientada a objetos en Python?
+La POO permite crear software seguro y fiable. Muchos marcos y bibliotecas de Python utilizan este paradigma para construir su código base. Algunos ejemplos son Django, Kivy, pandas, NumPy y TensorFlow.
+Veamos las principales ventajas de usar OOP en Python.
+Ventajas de la POO de Python
+Las siguientes razones te harán optar por utilizar la programación orientada a objetos en Python.
+Todos los lenguajes de programación modernos utilizan la POO
+Este paradigma es independiente del lenguaje. Si aprendes POO en Python, podrás utilizarlo en lo siguiente:
+Java
+PHP (asegúrate de leer la comparación entre PHP y Python)
+Ruby
+Javascript
+C#
+Kotlin
+Todos estos lenguajes están orientados a objetos de forma nativa o incluyen opciones para la funcionalidad orientada a objetos. Si quieres aprender cualquiera de ellos después de Python, será más fácil: encontrarás muchas similitudes entre los lenguajes que trabajan con objetos.
+La POO te permite codificar más rápido
+Codificar más rápido no significa escribir menos líneas de código. Significa que puedes implementar más funciones en menos tiempo sin comprometer la estabilidad de un proyecto.
+La programación orientada a objetos te permite reutilizar el código mediante la implementación de la abstracción. Este principio hace que tu código sea más conciso y legible.
+Como ya sabrás, los programadores pasan mucho más tiempo leyendo código que escribiéndolo. Es la razón por la que la legibilidad es siempre más importante que sacar características lo más rápido posible.
+La productividad disminuye con un código no legible
+La productividad disminuye con un código no legible
+Más adelante verás más sobre el principio de abstracción.
+La OOP te ayuda a evitar el código espagueti
+¿Recuerdas el programa de adivinación de números del principio de este artículo?
+Si sigues añadiendo funciones, tendrás muchas sentencias if anidadas en el futuro. Esta maraña de interminables líneas de código se llama código espagueti, y deberías evitarla en la medida de lo posible.
+La programación orientada a objetos nos da la posibilidad de comprimir toda la lógica en objetos, evitando así largos trozos de if’s anidados.
+La POO mejora el análisis de cualquier situación
+Una vez que tengas algo de experiencia con la POO, podrás pensar en los problemas como objetos pequeños y específicos.
+Esta comprensión conduce a una rápida puesta en marcha del proyecto.
+Programación estructurada frente a la programación orientada a objetos
+La programación estructurada es el paradigma más utilizado por los principiantes porque es la forma más sencilla de construir un pequeño programa.
+Se trata de ejecutar un programa Python de forma secuencial. Eso significa que le das al ordenador una lista de tareas y luego las ejecutas de arriba a abajo.
+Veamos un ejemplo de programación estructurada con un programa de cafetería.
+
+small = 2
+regular = 5
+big = 6
+ 
+user_budget = input('What is your budget? ')
+ 
+try:
+   user_budget = int(user_budget)
+except:
+   print('Please enter a number')
+   exit()
+ 
+if user_budget > 0:
+   if user_budget >= big:
+       print('You can afford the big coffee')
+       if user_budget == big:
+           print('It\'s complete')
+       else:
+           print('Your change is', user_budget - big)
+   elif user_budget == regular:
+       print('You can afford the regular coffee')
+       print('It\'s complete')
+   elif user_budget >= small:
+       print('You can buy the small coffee')
+       if user_budget == small:
+           print('It\'s complete')
+       else:
+           print('Your change is', user_budget - small)
+
+El código anterior actúa como un vendedor de cafetería. Te pedirá un presupuesto y luego te «venderá» el mejor café que seas capaz de comprar.
+Intenta ejecutarlo en la terminal. Se ejecutará paso a paso, dependiendo de tu entrada.
+Este código funciona perfectamente, pero tenemos tres problemas:
+Tiene mucha lógica repetida.
+Utiliza muchos condicionales if anidados.
+Será difícil de leer y modificar.
+La POO se inventó como solución a todos estos problemas.
+Veamos el programa anterior implementado con POO. No te preocupes si aún no lo entiendes. Es solo para comparar la programación estructurada y la programación orientada a objetos.
+
+class Coffee:
+        # Constructor
+        def __init__(self, name, price):
+                self.name = name
+                self.price = float(price)
+        def check_budget(self, budget):
+                # Check if the budget is valid
+                if not isinstance(budget, (int, float)):
+                        print('Enter float or int')
+                        exit()
+                if budget < 0: 
+                    print('Sorry you don\'t have money') 
+                    exit() 
+        def get_change(self, budget):
+                return budget - self.price
+        
+        def sell(self, budget):
+                self.check_budget(budget)
+                if budget >= self.price:
+                        print(f'You can buy the {self.name} coffee')
+                        if budget == self.price:
+                                print('It\'s complete')
+                        else:
+                                print(f'Here is your change {self.get_change(budget)}$')
+
+                        exit('Thanks for your transaction')
+
+Nota: Todos los conceptos siguientes se explicarán con mayor profundidad a lo largo del artículo.
+El código anterior representa una clase llamada «Coffee». Tiene dos atributos – «Name» y «Price» – y ambos se utilizan en los métodos. El método principal es «Sell», que procesa toda la lógica necesaria para completar el proceso de venta.
+Si intentas ejecutar esa clase, no obtendrás ninguna salida. Ocurre principalmente porque solo estamos declarando la «plantilla» para los cafés, no los cafés en sí.
+Implementemos esa clase con el siguiente código:
+
+small = Coffee('Small', 2)
+regular = Coffee('Regular', 5)
+big = Coffee('Big', 6)
+ 
+try:
+   user_budget = float(input('What is your budget? '))
+except ValueError:
+   exit('Please enter a number')
+  
+for coffee in [big, regular, small]:
+   coffee.sell(user_budget)
+Aquí estamos haciendo instancias, u objetos de café, de la clase «Coffee», y luego llamando al método «sell» de cada café hasta que el usuario pueda pagar cualquier opción.
+
+Obtendremos el mismo resultado con ambos enfoques, pero podemos ampliar la funcionalidad del programa mucho mejor con la POO.
+
+A continuación se muestra una tabla comparativa entre la programación orientada a objetos y la programación estructurada:
+
+OOP	Programación Estructurada
+Más fácil de mantener	Difícil de mantener
+No te repitas (DRY)	Código repetido en muchos lugares
+Pequeños trozos de código reutilizados en muchos lugares	Una gran cantidad de código en pocos lugares
+Enfoque por objetos	Enfoque de código de bloques
+Más fácil de depurar	Más difícil de depurar
+Gran curva de aprendizaje	Una curva de aprendizaje más sencilla
+Utilizado en grandes proyectos	Optimizado para programas sencillos
+Para concluir la comparación de paradigmas:
+Ninguno de los dos paradigmas es perfecto (la POO puede resultar abrumadora en proyectos sencillos).
+Estas son solo dos formas de resolver un problema; hay otras por ahí.
+La POO se utiliza en grandes bases de código, mientras que la programación estructurada es principalmente para proyectos sencillos.
+Pasemos a los objetos incorporados en Python.
+Todo es un objeto en Python
+Te diremos un secreto: has estado usando OOP todo el tiempo sin darte cuenta.
+Incluso cuando se utilizan otros paradigmas en Python, se siguen utilizando objetos para hacer casi todo.
+Eso es porque, en Python, todo es un objeto.
+Recuerda la definición de objeto: Un objeto en Python es una única colección de datos (atributos) y comportamiento (métodos).
+Esto coincide con cualquier tipo de datos en Python.
+Una cadena es una colección de datos (caracteres) y comportamientos (upper(), lower(), etc.). Lo mismo ocurre con los enteros, los flotantes, los booleanos, las listas y los diccionarios.
+Antes de continuar, repasemos el significado de los atributos y los métodos.
+Atributos y métodos
+Los atributos son variables internas dentro de los objetos, mientras que los métodos son funciones que producen algún comportamiento.
+Vamos a hacer un simple ejercicio en el shell de Python. Puedes abrirlo escribiendo python o python3 en tu terminal.
+Shell de Python
+Ahora, vamos a trabajar con el shell de Python para descubrir métodos y tipos.
+>>> kinsta = 'Kinsta, Premium WordPress hosting'
+>>> kinsta.upper()
+'KINSTA, PREMIUM WORDPRESS HOSTING'
+En la segunda línea, estamos llamando a un método de cadena, upper(). Devuelve el contenido de la cadena todo en mayúsculas. Sin embargo, no cambia la variable original.
+>>> kinsta
+'Kinsta, Premium WordPress hosting'
+Profundicemos en las funciones valiosas cuando se trabaja con objetos.
+La función type() permite obtener el tipo de un objeto. El «tipo» es la clase a la que pertenece el objeto.
+>>> type(kinsta)
+# class 'str'
+La función dir() devuelve todos los atributos y métodos de un objeto. Vamos a probarlo con la variable kinsta.
+>>> dir(kinsta)
+['__add__', '__class__',  ........... 'upper', 'zfill']
+Ahora, intenta imprimir algunos de los atributos ocultos de este objeto.
+ >>> kinsta.__class__ # class ‘str’ e>
+Esto devolverá la clase a la que pertenece el objeto kinsta. Así que podemos decir que lo único que devuelve la función type es el atributo __class__ de un objeto.
+Puedes experimentar con todos los tipos de datos, descubriendo todos sus atributos y métodos directamente en el terminal. Puedes obtener más información sobre los tipos de datos incorporados en la documentación oficial.

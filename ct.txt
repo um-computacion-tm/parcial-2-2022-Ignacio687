@@ -1,0 +1,100 @@
+Contenedores, sistemas de contenerización y orquestadores
+Sistemas
+Cloud computing, Infraestructura
+Contenerización y orquestación de contenedores
+Los términos «contenedor» y «contenerización» son un préstamo de la industria del transporte. Mientras que en la industria del transporte los contenedores sirven para separar físicamente diferentes cargas, en IT los contenedores virtuales empaquetan el código, archivos de configuración, librerías y dependencias que las aplicaciones necesitan para ejecutarse. Un contenedor es otra forma de virtualización, al igual que las máquinas virtuales, y Docker y Kubernetes son las herramientas de contenerización y orquestación de contenedores más populares.
+
+Índice de contenidos
+1 ¿Qué es un contenedor?
+1.1 ¿Cuál es la diferencia entre un contenedor y una máquina virtual?
+1.2 Ventajas de usar contenedores
+1.2.1 Portabilidad entre diferentes entornos
+1.2.2 Productividad de los desarrolladores
+1.2.3 Eficiencia
+1.3 ¿Qué son los microservicios contenerizados?
+2 ¿Qué es la orquestación de contenedores?
+2.1 Ventajas de la orquestación de contenedores
+3 Sistema de contenedores y orquestadores populares
+3.1 Kubernetes
+3.2 Docker
+3.3 Nomad
+3.4 Apache Mesos
+4 Kubernetes vs Docker
+¿Qué es un contenedor?
+Los contenedores se usan para construir, compartir y ejecutar aplicaciones. Un contenedor es un paquete de software ligero que contiene el código y el resto de elementos necesarios para que una aplicación se ejecute con rapidez y fiabilidad. Los contenedores están aislados y abstraídos del sistema operativo y del servidor. Esto permite a los equipos de DevOps desplegar aplicaciones en diferentes entornos sin problemas.
+
+¿Cuál es la diferencia entre un contenedor y una máquina virtual?
+Por un lado, un contenedor es una instancia de virtualización capaz de ejecutar instancias separadas de una aplicación usando un único OS. La aplicación contenerizada reconoce el sistema operativo como si fuera exclusivamente para ella. Al compartir el sistema operativo host, los contenedores son mucho más ligeros y eficientes. Además, también simplifican el mantenimiento y las actualizaciones.
+
+Por otro lado, una máquina virtual o VM es un entorno virtual creado en un sistema de hardware físico mediante un hipervisor y que tiene su propio sistema operativo, CPU, memoria, interfaz de red y almacenamiento. En nuestro glosario cloud recogemos más términos relacionados con la computación en la nube.
+
+Ventajas de usar contenedores
+Portabilidad entre diferentes entornos
+Los contenedores están construidos para ejecutarse en cualquier entorno; lo que permite reducir el riesgo de dependencia de un único proveedor. Moverlos de un servicio cloud a otro es mucho más fácil. Además, la portabilidad es posible sin necesidad de reescribir una gran cantidad de código.
+
+Productividad de los desarrolladores
+Al estar construidos para ser ejecutados en cualquier entorno, también permiten escribir el código de una forma más consistente sin preocuparse por posibles problemas de compatibilidad. De este modo se puede acelerar el desarrollo y despliegue de aplicaciones. Los contenedores también facilitan los cambios y actualizaciones con el paso del tiempo.
+
+Eficiencia
+Al ser ligeros y efímeros, los contenedores reducen el consumo de recursos. Además, una única máquina puede ejecutar múltiples contenedores.
+
+¿Qué son los microservicios contenerizados?
+Los microservicios contenerizados se ejecutan dentro de un contenedor, pero pueden desplegarse, actualizarse y ser retirados de forma independiente. Es un enfoque de arquitectura de software que consiste en dividir una solución de gran tamaño en fragmentos más pequeños para impulsar aún más la productividad y la eficiencia.
+
+¿Qué es la orquestación de contenedores?
+La orquestación de contenedores consiste en la automatización de la mayoría de las operaciones necesarias para ejecutar cargas de trabajo y servicios en contenedores. En sistemas a gran escala, las aplicaciones contenerizadas se vuelven difíciles de gestionar manualmente porque suelen incluir cientos e incluso miles de contenedores. Así que, la orquestación de contenedores es esencial para reducir la complejidad operacional a la hora de ejecutarlos.
+
+Ventajas de la orquestación de contenedores
+En resumen, la orquestación de contenedores ofrece diversos beneficios:
+
+Reduce la complejidad operacional a la hora de gestionar contenedores.
+Mejora la seguridad al reducir las posibilidades de cometer errores humanos, gracias a la automatización.
+Permite escalar y reiniciar contenedores y clústers automáticamente.
+Ayuda a los equipos de IT a automatizar parte del trabajo y a aprovechar todos los beneficios de usar contenedores.
+Sistema de contenedores y orquestadores populares
+Estos son algunos de los sistemas de contenedores y orquestadores más populares.
+
+Kubernetes
+Kubernetes, también conocido como K8s, es un orquestador y sistema de contenedores de código abierto, originalmente diseñado por Google. Kubernetes se usa para automatizar el despliegue, escalado y gestión de aplicaciones en contenedores.
+
+Desarrollador: Cloud Native Computing Foundation.
+
+Licencia: Apache License 2.0.
+
+Última versión: Kubernetes 1.22.2.
+
+Más detalles en la web de Kubernetes.
+
+Docker
+Docker es una plataforma de contenedores de código abierto. Los contenedores virtuales de Docker se pueden ejecutar en ordenadores Linux, Windows y MacOS, así como en diferentes ubicaciones —on-premises, nube pública y nube privada—. Docker incluye el motor de Docker, Docker Engine, y la herramienta de orquestación de contenedores Docker Swarm. Descubre el caso de éxito de uno de nuestros clientes que usa Docker en un entorno de nube privada.
+
+Desarrollador: Docker.
+
+Licencia: Apache License 2.0.
+
+Última versión: Docker 20.10.7.
+
+Más detalles en la web de Docker.
+
+Nomad
+Nomad es una herramienta de orquestación de cargas de trabajo de código abierto diseñada para desplegar y gestionar contenedores y aplicaciones no contenerizadas.
+
+Desarrollador: HashiCorp.
+
+Última versión: Nomad 1.2.2.
+
+Más detalles en la web de Nomad.
+
+Apache Mesos
+Apache Mesos es una plataforma de orquestación que se puede ejecutar en Linux, Windows y Mac OS X. Fue desarrollada inicialmente en la Universidad de California en Berkeley. Apache Mesos se usa para gestionar clústers de nodos y se ejecuta en cada nodo para gestionar recursos y planificar tareas del centro de datos.
+
+Desarrollador: Apache Software Foundation.
+
+Licencia: Apache License 2.0.
+
+Última versión: Apache Mesos 1.11.0.
+
+Más detalles en la web de Apache Mesos.
+
+Kubernetes vs Docker
+Kubernetes es un sistema de orquestación de contenedores y Docker es una plataforma de contenerización. Por un lado, Kubernetes proporciona una plataforma para gestionar cargas de trabajo y servicios contenerizados. Por otro lado, Docker proporciona un modo de construir y ejecutar contenedores. Así que, Docker se puede usar con Kubernetes y otros orquestadores de contenedores. No obstante, Docker también cuenta con una herramienta de orquestación equivalente a Kubernetes: Docker Swarm.

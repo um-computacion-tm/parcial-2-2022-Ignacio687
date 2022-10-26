@@ -1,0 +1,5 @@
+La cobertura de código es una medida (porcentual) en las pruebas de software que mide el grado en que el código fuente de un programa ha sido comprobado con pruebas de software. Sirve para determinar la calidad del test que se lleve a cabo1​ y para determinar las partes críticas del código que no han sido comprobadas y las partes que ya lo fueron, además se puede utilizar como técnica de optimización dentro de un compilador optimizador para llevar a cabo una eliminación de código muerto, más específicamente sirve para detectar código inalcanzable.
+
+La cobertura de código fue uno de los primeros métodos inventados para las pruebas de software sistemáticas. La primera referencia fue publicada por Miller y Maloney en Communications of the ACM en 1963.
+
+La cobertura de código es una consideración en la certificación de seguridad de los equipos de aviación. Las pautas que indican que equipos de aviación están certificados por la Administración Federal de Aviación (FAA) se documentan en DO-178B3​ y DO-178C.​ Es más, la cobertura máxima del código es un requisito en los estándares de calidad de software modernos como ISO 26262 o ICE 61508.
